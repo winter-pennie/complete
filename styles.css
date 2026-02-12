@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*THIS IS MY NAV BAR*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: rgb(236 190, 90);
+}
+
+.navelements ul{
+list-style: none;
+display: flex;
+gap: 30px;
+}
+
+.navelements ul li a {
+text-decoration: none;
+color: black;
+font-size: 20px;
+}
+
+.navbutton {
+      background-color: black;
+    color:rgb(233, 228, 228);
+    padding: 10px 20px;
+    border: none;
+cursor: pointer;
+}
+
+.navbutton button {
+background: none;
+outline: none;
+border: none;
+color: rgb(250, 245, 245);
+
+}
+
+/*THIS IS HERO SECTION*/
+.herosection{
+    background-color: rgb(236, 190, 90);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   padding-top: 30px;
+}
+
+.herosection .herodescription {
+     max-width: 450px;
+}
+.herosection .heroimage{
+    width: 100%;
+    height: 400px;
+
+}
+
+.herodescription h1{
+padding: 20px;
+font-size: 36px;
+}
+.herodescription button{
+      background-color: black;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+cursor: pointer;
+font-size: 16px;
+margin-top: 30px;
+}
+.heroimage img {
+    border-radius: 20px;
+width: 400px;
+}
+
+/*MY WORK SECTION*/
+.workmetrics{
+display: flex;
+    justify-content: space-between;
+    margin: 50px 30px;} 
+.workmetrics h4{
+font-size: 28px;
+}
+.workmetrics.work-metrics{ 
+     display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;  
+    flex-wrap: wrap;
+}
+
+.workmetrics.work-metrics h6{
+font-size: 20px;
+display: flex;
+}
+
+.workprojects{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.workprojects img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+object-fit: cover;}
+
+
+/*MY WORK EXPERIENCE*/
+.workexperiences{
+padding: 20px;
+    display: flex;
+    gap: 30px;
+   padding-top: 30px;
+   flex-wrap: wrap;
+}
+
+.experiencescription{
+ max-width: 450px;}
+
+.experiencescription h1{
+padding: 20px;
+font-size: 36px;
+}
+.experiencescription button{
+      background-color: black;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+cursor: pointer;
+font-size: 16px;
+margin-top: 30px;}
+
+.allbrands {
+        display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.brands img{
+       width: 250px;
+    height: 250px;
+    border-radius: 20px;}
+
+/*MY PORTFOLIO*/
+.portfolio{
+    justify-content: space-between;
+    margin: 50px 30px;
+}
+
+.portfolio .portfolioscription{
+      max-width: 450px;
+}
+
+.portfolio button{
+     background-color: black;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+cursor: pointer;
+font-size: 16px;
+margin-top: 30px;    
+margin-bottom: 30px;}
+
+.designs{
+        display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.portfolio .designs img {
+       width: 250px;
+    height: 250px;
+    border-radius: 20px;
+object-fit: cover;}
+
+.button button{
+      background-color: black;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+cursor: pointer;
+font-size: 16px;
+margin-top: 30px;    
+margin-bottom: 30px;
+justify-content: center;
+}
+
+.clients{
+    max-width: 450px;
+} 
+ .clients h4{
+    padding: 20px;
+font-size: 30px;
+ }
+
+/*CUSTOMERS REVEIWS*/
+.reveiws{
+    background-color: moccasin;
+    padding: 50px 80px;
+    display: flex;
+    gap: 20px;
+   padding-top: 35px; 
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.reveiws3  h2{
+    text-align: center;
+padding: 30px;
+font-size: 40px;
+}
+
+.reveiws div{
+    background-color: white;
+    padding: 25px ;
+    border-radius: 15px; 
+}
+
+ .reveiws div h4{
+padding: 20px;
+font-size: 30px;
+}
+
+
+/*media query*/
+@media(max-width="768"){
+    .reveiws{
+        padding: 15px 25px;
+    }
+    .reveiws div{
+        flex-direction: column;
+    }
+    .navelemets{
+        display: none;
+    }
+    .herosection{
+        flex-direction: column;
+    }
+.heroimage img {
+    width: 100%;
+}
+.workmetrics h4{
+    font-size: 14px;
+}
+.workmetrics.work-metrics {
+    font-size: 14px;
+}
+.workmetrics.work-metrics p{
+    font-size: 10px;
+}
+.workprojects{
+    flex-direction: column;
+}
+.workprojects img{
+    width: 300px;
+    height: 200px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
